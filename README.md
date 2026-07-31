@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner.svg" width="100%" alt="I teach machines to talk — 1M+ calls a month, 10 languages, down to the packets. LiveWire: dial from the browser, hear the real network — busy/switched-off detection, supervisor barge and whisper, 183 early media." />
+  <img src="assets/banner.svg" width="100%" alt="I teach machines to talk — 1M+ calls a month, 10 languages, down to the packets." />
 </div>
 
 <p align="center">
