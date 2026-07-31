@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-  <a href="https://github.com/rahul20110"><img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=18&duration=2800&pause=900&color=A855F7&center=true&vCenter=true&width=640&lines=Voice+AI+%E2%80%94+1M%2B+calls+a+month+in+10+languages+%F0%9F%93%9E;15%2B+production+chat+agents+%F0%9F%92%AC;I+debug+down+to+the+packets+%F0%9F%94%AC" alt="Voice AI — 1M+ calls a month in 10 languages · 15+ production chat agents · I debug down to the packets" /></a>
+  <a href="https://github.com/rahul20110"><img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=18&duration=2800&pause=900&color=A855F7&center=true&vCenter=true&width=720&lines=Voice+AI+%E2%80%94+1M%2B+calls+a+month+in+10+languages+%F0%9F%93%9E;LiveWire+%E2%96%B8+dial+from+the+browser%2C+hear+the+real+network+%E2%98%8E%EF%B8%8F;hear+busy+%2F+switched-off+tones+%E2%80%94+183+early+media%2C+my+fork+%F0%9F%91%82;supervisor+barge+%26+whisper+on+live+calls+%F0%9F%8E%A7;15%2B+production+chat+agents+%F0%9F%92%AC;I+debug+down+to+the+packets+%F0%9F%94%AC" alt="Voice AI — 1M+ calls a month in 10 languages · LiveWire — dial from the browser, hear the real network · hear busy/switched-off tones via 183 early media · supervisor barge & whisper · 15+ production chat agents · I debug down to the packets" /></a>
 </p>
 
 # 🤖 I'M RAHUL!
