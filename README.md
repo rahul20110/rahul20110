@@ -29,19 +29,6 @@ I build AI agents that talk to people — on phone calls, WhatsApp, Instagram, e
 
 <div align="center"><img src="assets/divider.svg" width="100%" alt="" /></div>
 
-## ☎️ Click2Call — real calls, straight from the browser
-
-<div align="center">
-  <img src="assets/click2call.svg" width="100%" alt="Click2Call architecture: agent calls from the browser over WebRTC, through self-hosted LiveKit + SIP, out to the customer's phone. Supervisor can listen, whisper, or barge. Busy and switched-off announcements are audible via 183 early media." />
-</div>
-
-- 🖱️ Agents dial out **from the browser** — WebRTC in, SIP trunk out, no desk phone, no third-party dialer
-- 👂 **You hear what the network hears** — busy tone, switched-off announcements, ringback. Stock LiveKit SIP drops early media; [my fork](https://github.com/rahul20110/sip) plays it (183 Session Progress)
-- 🎧 Supervisors can **listen silently**, **whisper** to just the agent, or **barge** into the live call
-- ⚙️ Agent mic goes live *before* the customer's phone rings — zero dead air — plus answer detection and CRM webhooks
-
-<div align="center"><img src="assets/divider.svg" width="100%" alt="" /></div>
-
 ## 🛠️ Languages and Tools
 
 <p>
