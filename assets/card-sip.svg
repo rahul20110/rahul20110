@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 96" role="img" aria-label="rahul20110/sip — fork of LiveKit's SIP bridge with TCP framing fix and in-process call recording.">
+  <style>
+    .display { font-family: Inter, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'Geist Mono', 'SFMono-Regular', Consolas, Menlo, monospace; }
+  </style>
+  <rect x="0.5" y="0.5" width="879" height="95" rx="8" fill="#191919" stroke="#212327"/>
+  <text x="28" y="36" class="mono" font-size="14" fill="#ffffff">rahul20110/sip</text>
+  <text x="852" y="36" text-anchor="end" class="mono" font-size="14" fill="#7d8187">&#8599;</text>
+  <text x="28" y="62" class="display" font-size="13" fill="#dadbdf">Fork of LiveKit's SIP bridge &#8212; carrier-level TCP framing fix, plus call recording rebuilt as an in-process service:</text>
+  <text x="28" y="82" class="display" font-size="13" fill="#dadbdf">stereo PCM tap &#8594; WAV &#8594; S3 at negligible CPU cost. No separate egress server.</text>
+</svg>

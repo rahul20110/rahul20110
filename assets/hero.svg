@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 320" role="img" aria-label="Rahul Kumar — AI engineer. I build AI agents and debug them down to the packets.">
+  <style>
+    .display { font-family: Inter, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'Geist Mono', 'SFMono-Regular', Consolas, Menlo, monospace; }
+    .live { animation: pulse 1.8s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+    @media (prefers-reduced-motion: reduce) { .live { animation: none; } }
+  </style>
+
+  <rect x="0.5" y="0.5" width="879" height="319" rx="8" fill="#0a0a0a" stroke="#212327"/>
+
+  <text x="48" y="78" class="mono" font-size="12" letter-spacing="3" fill="#ffffff">AI ENGINEER</text>
+
+  <text x="46" y="160" class="display" font-size="72" font-weight="400" letter-spacing="-1.8" fill="#ffffff">Rahul Kumar</text>
+
+  <text x="48" y="204" class="display" font-size="18" font-weight="400" fill="#dadbdf">I build AI agents &#8212; and debug them down to the packets.</text>
+
+  <text x="48" y="252" class="mono" font-size="12.5" letter-spacing="1" fill="#7d8187">1M+ CALLS / MONTH &#183; 15+ PRODUCTION AGENTS &#183; 10 LANGUAGES &#183; 2 PYPI LIBRARIES</text>
+
+  <circle class="live" cx="53" cy="284" r="4" fill="#ff7a17"/>
+  <text x="66" y="288" class="mono" font-size="11" letter-spacing="2" fill="#7d8187">LIVE IN PRODUCTION SINCE 2024</text>
+</svg>
