@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner.svg" width="100%" alt="Hello World — welcome to my profile. Rahul Kumar." />
+  <img src="assets/banner.svg" width="100%" alt="I teach machines to talk — 1M+ calls a month, 10 languages, down to the packets. LiveWire: dial from the browser, hear the real network — busy/switched-off detection, supervisor barge and whisper, 183 early media." />
 </div>
 
 <p align="center">
@@ -15,7 +15,7 @@
 I build AI agents that talk to people — on phone calls, WhatsApp, Instagram, email and the web — with a huge love for **Python**, **LangGraph**, **LiveKit**, **FastAPI**, **RAG**, **SIP/WebRTC** and everything real-time.
 
 - 📞 Built a Voice AI agent making **1M+ calls a month** in **10 Indian languages**
-- 🖱️ Built a **Click2Call platform** — outbound calls straight from the browser, with supervisor **listen / whisper / barge**
+- 🖱️ Built **LiveWire** — browser-based calling on my own LiveKit stack: dial out with one click, *hear* busy & switched-off tones (183 early media that stock SIP stacks drop), and let supervisors **listen / whisper / barge**
 - 💬 Shipped **15+ production chat agents** for fintech, healthcare, real estate & e-commerce
 - 🔬 I debug down to the packets — fixed a carrier-level TCP bug in **[LiveKit's SIP bridge](https://github.com/rahul20110/sip)** and rebuilt call recording as an in-process service
 - 📦 Author of **[fika-langwatch](https://pypi.org/project/fika-langwatch/)** & **[fika-logger](https://pypi.org/project/fika-logger/)** on PyPI
