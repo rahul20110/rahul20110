@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" role="img" aria-label="Rahul Kumar — AI engineer. I build AI agents and debug them down to the packets.">
+  <style>
+    .sans { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+    .layer { fill: #141E28; stroke: #243240; stroke-width: 1.25; }
+    .l5 { animation: glow 4.5s linear infinite; animation-delay: 0s; }
+    .l4 { animation: glow 4.5s linear infinite; animation-delay: .55s; }
+    .l3 { animation: glow 4.5s linear infinite; animation-delay: 1.1s; }
+    .l2 { animation: glow 4.5s linear infinite; animation-delay: 1.65s; }
+    .l1 { animation: glow 4.5s linear infinite; animation-delay: 2.2s; }
+    .probe { animation: descend 4.5s ease-in-out infinite; }
+    .live { animation: pulse 1.6s ease-in-out infinite; }
+    @keyframes glow {
+      0%, 18%, 100% { stroke: #243240; }
+      6% { stroke: #C97E4A; }
+    }
+    @keyframes descend {
+      0% { transform: translateY(0); opacity: 0; }
+      8% { opacity: 1; }
+      55% { transform: translateY(152px); opacity: 1; }
+      70% { transform: translateY(152px); opacity: 1; }
+      100% { transform: translateY(152px); opacity: 0; }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.25; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .l1, .l2, .l3, .l4, .l5, .probe, .live { animation: none; }
+    }
+  </style>
+
+  <!-- card -->
+  <rect x="0" y="0" width="880" height="300" rx="14" fill="#0F1720"/>
+  <rect x="0.75" y="0.75" width="878.5" height="298.5" rx="13.25" fill="none" stroke="#243240" stroke-width="1.5"/>
+
+  <!-- ============ left: identity ============ -->
+  <text x="48" y="68" class="mono" font-size="12" letter-spacing="3.5" fill="#C97E4A">AI ENGINEER</text>
+
+  <text x="46" y="122" class="sans" font-size="46" font-weight="700" fill="#EAEFF4">Rahul Kumar</text>
+
+  <text x="48" y="158" class="mono" font-size="15" fill="#93A7B4">I build AI agents &#8212; and debug them</text>
+  <text x="48" y="180" class="mono" font-size="15" fill="#93A7B4">down to the packets.</text>
+
+  <text x="48" y="214" class="mono" font-size="13" fill="#E5B567">1M+ calls/month &#183; 15+ production agents &#183; 2 PyPI libraries</text>
+
+  <circle class="live" cx="52" cy="246" r="4" fill="#C97E4A"/>
+  <text x="64" y="250" class="mono" font-size="11" letter-spacing="2" fill="#8FA3B0">LIVE IN PRODUCTION SINCE 2024</text>
+
+  <!-- ============ right: the stack, surface to bottom ============ -->
+  <!-- depth rail + probe -->
+  <line x1="528" y1="70" x2="528" y2="252" stroke="#2A3947" stroke-width="1.5"/>
+  <circle class="probe" cx="528" cy="85" r="4.5" fill="#E5B567"/>
+
+  <!-- L5 agents -->
+  <rect class="layer l5" x="540" y="70" width="300" height="30" rx="6"/>
+  <text x="552" y="89" class="mono" font-size="11" font-weight="bold" fill="#C97E4A">L5 &#183; AGENTS</text>
+  <text x="656" y="89" class="mono" font-size="10.5" fill="#8FA3B0">LangGraph &#183; RAG &#183; voice &amp; chat</text>
+
+  <!-- L4 pipelines -->
+  <rect class="layer l4" x="540" y="108" width="300" height="30" rx="6"/>
+  <text x="552" y="127" class="mono" font-size="11" font-weight="bold" fill="#C97E4A">L4 &#183; PIPELINES</text>
+  <text x="670" y="127" class="mono" font-size="10.5" fill="#8FA3B0">STT &#8646; LLM &#8646; TTS realtime</text>
+
+  <!-- L3 gateway -->
+  <rect class="layer l3" x="540" y="146" width="300" height="30" rx="6"/>
+  <text x="552" y="165" class="mono" font-size="11" font-weight="bold" fill="#C97E4A">L3 &#183; GATEWAY</text>
+  <text x="660" y="165" class="mono" font-size="10.5" fill="#8FA3B0">routing &#183; fallback &#183; cost/min</text>
+
+  <!-- L2 protocol -->
+  <rect class="layer l2" x="540" y="184" width="300" height="30" rx="6"/>
+  <text x="552" y="203" class="mono" font-size="11" font-weight="bold" fill="#C97E4A">L2 &#183; PROTOCOL</text>
+  <text x="662" y="203" class="mono" font-size="10.5" fill="#8FA3B0">SIP &#183; WebRTC &#183; RTP</text>
+
+  <!-- L1 packets -->
+  <rect class="layer l1" x="540" y="222" width="300" height="30" rx="6" stroke="#C97E4A"/>
+  <text x="552" y="241" class="mono" font-size="11" font-weight="bold" fill="#E5B567">L1 &#183; PACKETS</text>
+  <text x="652" y="241" class="mono" font-size="10.5" fill="#8FA3B0">Wireshark &#183; TCP framing &#183; pcap</text>
+
+  <text x="540" y="274" class="mono" font-size="10.5" fill="#E5B567">the interesting bugs live at the bottom &#8595;</text>
+</svg>
