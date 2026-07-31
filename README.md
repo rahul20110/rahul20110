@@ -15,6 +15,7 @@
 I build AI agents that talk to people — on phone calls, WhatsApp, Instagram, email and the web — with a huge love for **Python**, **LangGraph**, **LiveKit**, **FastAPI**, **RAG**, **SIP/WebRTC** and everything real-time.
 
 - 📞 Built a Voice AI agent making **1M+ calls a month** in **10 Indian languages**
+- 🖱️ Built a **Click2Call platform** — outbound calls straight from the browser, with supervisor **listen / whisper / barge**
 - 💬 Shipped **15+ production chat agents** for fintech, healthcare, real estate & e-commerce
 - 🔬 I debug down to the packets — fixed a carrier-level TCP bug in **[LiveKit's SIP bridge](https://github.com/rahul20110/sip)** and rebuilt call recording as an in-process service
 - 📦 Author of **[fika-langwatch](https://pypi.org/project/fika-langwatch/)** & **[fika-logger](https://pypi.org/project/fika-logger/)** on PyPI
@@ -25,6 +26,19 @@ I build AI agents that talk to people — on phone calls, WhatsApp, Instagram, e
 <img src="https://komarev.com/ghpvc/?username=rahul20110&label=PROFILE+VIEWS&color=a855f7&style=flat" alt="Profile views" />
 
 <br clear="right" />
+
+<div align="center"><img src="assets/divider.svg" width="100%" alt="" /></div>
+
+## ☎️ Click2Call — real calls, straight from the browser
+
+<div align="center">
+  <img src="assets/click2call.svg" width="100%" alt="Click2Call architecture: agent calls from the browser over WebRTC, through self-hosted LiveKit + SIP, out to the customer's phone. Supervisor can listen, whisper, or barge. Busy and switched-off announcements are audible via 183 early media." />
+</div>
+
+- 🖱️ Agents dial out **from the browser** — WebRTC in, SIP trunk out, no desk phone, no third-party dialer
+- 👂 **You hear what the network hears** — busy tone, switched-off announcements, ringback. Stock LiveKit SIP drops early media; [my fork](https://github.com/rahul20110/sip) plays it (183 Session Progress)
+- 🎧 Supervisors can **listen silently**, **whisper** to just the agent, or **barge** into the live call
+- ⚙️ Agent mic goes live *before* the customer's phone rings — zero dead air — plus answer detection and CRM webhooks
 
 <div align="center"><img src="assets/divider.svg" width="100%" alt="" /></div>
 
