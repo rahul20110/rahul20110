@@ -7,6 +7,13 @@
     .c5 { animation-delay: 2s; }
     .wave { transform-box: fill-box; transform-origin: 10% 90%; animation: wave 1.8s ease-in-out infinite; }
     .bob { transform-box: fill-box; transform-origin: 50% 100%; animation: bob 2.4s ease-in-out infinite; }
+    .blink { transform-box: fill-box; transform-origin: center; animation: blink 3.8s infinite; }
+    .sound1 { animation: sound 1.6s ease-out infinite; }
+    .sound2 { animation: sound 1.6s ease-out infinite .4s; }
+    .eq { transform-box: fill-box; transform-origin: 50% 100%; animation: eq 1s ease-in-out infinite; }
+    .e2 { animation-delay: .2s; }
+    .e3 { animation-delay: .4s; }
+    .e4 { animation-delay: .6s; }
     @keyframes fall {
       0% { transform: translateY(-30px) rotate(0deg); opacity: 0; }
       15% { opacity: 1; }
@@ -20,7 +27,22 @@
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-6px); }
     }
-    @media (prefers-reduced-motion: reduce) { .confetti, .c2, .c3, .c4, .c5, .wave, .bob { animation: none; } }
+    @keyframes blink {
+      0%, 90%, 100% { transform: scaleY(1); }
+      93% { transform: scaleY(0.1); }
+    }
+    @keyframes sound {
+      0% { opacity: 0.9; transform: scale(0.6); }
+      100% { opacity: 0; transform: scale(1.5); }
+    }
+    @keyframes eq {
+      0%, 100% { transform: scaleY(0.4); }
+      50% { transform: scaleY(1); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .confetti, .c2, .c3, .c4, .c5, .wave, .bob, .blink, .sound1, .sound2, .eq, .e2, .e3, .e4 { animation: none; }
+      .sound1, .sound2 { opacity: 0; }
+    }
   </style>
 
   <!-- confetti -->
@@ -38,8 +60,12 @@
     <!-- body -->
     <rect x="85" y="170" width="90" height="80" rx="22" fill="#C4B5FD"/>
     <rect x="103" y="190" width="54" height="36" rx="10" fill="#2A1B3D"/>
-    <circle cx="118" cy="208" r="5" fill="#7DF9FF"/>
-    <rect x="130" y="203" width="20" height="10" rx="3" fill="#A855F7"/>
+    <circle cx="114" cy="208" r="4" fill="#7DF9FF"/>
+    <!-- chest equalizer -->
+    <rect class="eq"    x="126" y="200" width="5" height="18" rx="2" fill="#A855F7"/>
+    <rect class="eq e2" x="134" y="200" width="5" height="18" rx="2" fill="#F472B6"/>
+    <rect class="eq e3" x="142" y="200" width="5" height="18" rx="2" fill="#7DF9FF"/>
+    <rect class="eq e4" x="150" y="200" width="5" height="18" rx="2" fill="#A855F7"/>
 
     <!-- left arm waving -->
     <g class="wave">
@@ -53,8 +79,10 @@
     <!-- head -->
     <rect x="88" y="82" width="84" height="72" rx="20" fill="#E9D5FF"/>
     <rect x="100" y="100" width="60" height="30" rx="12" fill="#2A1B3D"/>
-    <circle cx="118" cy="115" r="6" fill="#7DF9FF"/>
-    <circle cx="142" cy="115" r="6" fill="#7DF9FF"/>
+    <g class="blink">
+      <circle cx="118" cy="115" r="6" fill="#7DF9FF"/>
+      <circle cx="142" cy="115" r="6" fill="#7DF9FF"/>
+    </g>
     <path d="M 116 138 q 14 10 28 0" stroke="#2A1B3D" stroke-width="3.5" fill="none" stroke-linecap="round"/>
 
     <!-- antenna -->
@@ -67,6 +95,13 @@
     <rect x="166" y="102" width="12" height="24" rx="6" fill="#7C3AED"/>
     <path d="M 172 126 q 6 20 -16 24" stroke="#7C3AED" stroke-width="5" fill="none" stroke-linecap="round"/>
     <circle cx="152" cy="152" r="5" fill="#F472B6"/>
+    <!-- sound waves from the mic -->
+    <g class="sound1">
+      <path d="M 162 144 a 12 12 0 0 1 0 18" stroke="#F472B6" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </g>
+    <g class="sound2">
+      <path d="M 170 139 a 19 19 0 0 1 0 28" stroke="#F0ABFC" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </g>
 
     <!-- legs -->
     <rect x="100" y="250" width="16" height="22" rx="8" fill="#A78BFA"/>

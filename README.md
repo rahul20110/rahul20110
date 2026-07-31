@@ -2,6 +2,10 @@
   <img src="assets/banner.svg" width="100%" alt="Hello World — welcome to my profile. Rahul Kumar." />
 </div>
 
+<p align="center">
+  <a href="https://github.com/rahul20110"><img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=18&duration=2800&pause=900&color=A855F7&center=true&vCenter=true&width=640&lines=Voice+AI+%E2%80%94+1M%2B+calls+a+month+in+10+languages+%F0%9F%93%9E;15%2B+production+chat+agents+%F0%9F%92%AC;I+debug+down+to+the+packets+%F0%9F%94%AC" alt="Voice AI — 1M+ calls a month in 10 languages · 15+ production chat agents · I debug down to the packets" /></a>
+</p>
+
 # 🤖 I'M RAHUL!
 
 *AI Engineer (Voice & Chat Agents)*
@@ -21,6 +25,8 @@ I build AI agents that talk to people — on phone calls, WhatsApp, Instagram, e
 <img src="https://komarev.com/ghpvc/?username=rahul20110&label=PROFILE+VIEWS&color=a855f7&style=flat" alt="Profile views" />
 
 <br clear="right" />
+
+<div align="center"><img src="assets/divider.svg" width="100%" alt="" /></div>
 
 ## 🛠️ Languages and Tools
 
@@ -51,12 +57,16 @@ I build AI agents that talk to people — on phone calls, WhatsApp, Instagram, e
 | 🛟 | [`fika-langwatch`](https://pypi.org/project/fika-langwatch/) | Automatic LLM fallback chains for LangChain — per-key health tracking, recovery detection, Slack/email alerts |
 | 📋 | [`fika-logger`](https://pypi.org/project/fika-logger/) | Structured logging for agent fleets — error dedup, trace IDs, auto-opens GitHub issues on new failures |
 
+<div align="center"><img src="assets/divider.svg" width="100%" alt="" /></div>
+
 ## 📊 GitHub Stats
 
 <p>
   <img src="https://github-readme-stats.vercel.app/api?username=rahul20110&show_icons=true&theme=midnight-purple&hide_border=true" alt="GitHub stats" height="170" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahul20110&layout=compact&theme=midnight-purple&hide_border=true" alt="Top languages" height="170" />
 </p>
+
+<div align="center"><img src="assets/divider.svg" width="100%" alt="" /></div>
 
 ## 🤝 Connect with Me
 

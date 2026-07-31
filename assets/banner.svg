@@ -1,4 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 260" role="img" aria-label="Hello World — welcome to my profile. Rahul Kumar.">
+  <style>
+    .sweep { animation: sweep 3.8s ease-in-out infinite; }
+    .blink { transform-box: fill-box; transform-origin: center; animation: blink 4.2s infinite; }
+    .glow { animation: glowpulse 2s ease-in-out infinite; }
+    .ch1 { animation: chev 2.4s linear infinite; }
+    .ch2 { animation: chev 2.4s linear infinite .3s; }
+    .ch3 { animation: chev 2.4s linear infinite .6s; }
+    .tw1 { animation: twinkle 3s ease-in-out infinite; }
+    .tw2 { animation: twinkle 3s ease-in-out infinite .8s; }
+    .tw3 { animation: twinkle 3s ease-in-out infinite 1.6s; }
+    .tw4 { animation: twinkle 3s ease-in-out infinite 2.2s; }
+    @keyframes sweep {
+      0% { transform: translateX(0) skewX(-20deg); }
+      55%, 100% { transform: translateX(1150px) skewX(-20deg); }
+    }
+    @keyframes blink {
+      0%, 91%, 100% { transform: scaleY(1); }
+      94% { transform: scaleY(0.1); }
+    }
+    @keyframes glowpulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+    @keyframes chev {
+      0%, 100% { opacity: 0.35; }
+      30% { opacity: 1; }
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.15; }
+      50% { opacity: 0.9; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .sweep, .blink, .glow, .ch1, .ch2, .ch3, .tw1, .tw2, .tw3, .tw4 { animation: none; }
+      .sweep { opacity: 0; }
+    }
+  </style>
+
   <defs>
     <linearGradient id="dome" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#E058E8"/>
@@ -9,10 +46,21 @@
       <stop offset="0" stop-color="#A855F7" stop-opacity="0.55"/>
       <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
     </radialGradient>
+    <mask id="helloMask">
+      <text x="440" y="158" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" letter-spacing="8" fill="#ffffff">HELLO WORLD</text>
+    </mask>
   </defs>
 
   <!-- dark base -->
   <rect x="0" y="0" width="880" height="260" fill="#12101A"/>
+
+  <!-- twinkling stars -->
+  <circle class="tw1" cx="48" cy="42" r="2.2" fill="#E9D5FF"/>
+  <circle class="tw2" cx="96" cy="78" r="1.6" fill="#F0ABFC"/>
+  <circle class="tw3" cx="822" cy="52" r="2.2" fill="#E9D5FF"/>
+  <circle class="tw4" cx="778" cy="90" r="1.6" fill="#F0ABFC"/>
+  <circle class="tw2" cx="852" cy="150" r="1.4" fill="#E9D5FF"/>
+  <circle class="tw3" cx="30" cy="140" r="1.4" fill="#E9D5FF"/>
 
   <!-- corner glows -->
   <ellipse cx="60" cy="230" rx="220" ry="120" fill="url(#glowL)"/>
@@ -22,24 +70,26 @@
   <path d="M 110 260 A 330 205 0 0 1 770 260 Z" fill="url(#dome)"/>
 
   <!-- decorative chevrons left -->
-  <g stroke="#C084FC" stroke-width="2" fill="none" opacity="0.85">
-    <path d="M 130 205 l 26 -34 h 16 l -26 34 z"/>
-    <path d="M 160 205 l 26 -34 h 16 l -26 34 z"/>
-    <path d="M 190 205 l 26 -34 h 16 l -26 34 z"/>
+  <g stroke="#C084FC" stroke-width="2" fill="none">
+    <path class="ch1" d="M 130 205 l 26 -34 h 16 l -26 34 z"/>
+    <path class="ch2" d="M 160 205 l 26 -34 h 16 l -26 34 z"/>
+    <path class="ch3" d="M 190 205 l 26 -34 h 16 l -26 34 z"/>
   </g>
   <!-- decorative chevrons right -->
-  <g stroke="#C084FC" stroke-width="2" fill="none" opacity="0.85">
-    <path d="M 648 205 l 26 -34 h 16 l -26 34 z"/>
-    <path d="M 678 205 l 26 -34 h 16 l -26 34 z"/>
-    <path d="M 708 205 l 26 -34 h 16 l -26 34 z"/>
+  <g stroke="#C084FC" stroke-width="2" fill="none">
+    <path class="ch1" d="M 648 205 l 26 -34 h 16 l -26 34 z"/>
+    <path class="ch2" d="M 678 205 l 26 -34 h 16 l -26 34 z"/>
+    <path class="ch3" d="M 708 205 l 26 -34 h 16 l -26 34 z"/>
   </g>
 
   <!-- avatar: robot with headset -->
   <circle cx="440" cy="70" r="42" fill="#1B1524" stroke="#E9D5FF" stroke-width="3"/>
   <rect x="418" y="52" width="44" height="34" rx="10" fill="#E9D5FF"/>
   <rect x="424" y="62" width="32" height="14" rx="7" fill="#2A1B3D"/>
-  <circle cx="432" cy="69" r="3.5" fill="#7DF9FF"/>
-  <circle cx="448" cy="69" r="3.5" fill="#7DF9FF"/>
+  <g class="blink">
+    <circle cx="432" cy="69" r="3.5" fill="#7DF9FF"/>
+    <circle cx="448" cy="69" r="3.5" fill="#7DF9FF"/>
+  </g>
   <path d="M 430 80 q 10 7 20 0" stroke="#2A1B3D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
   <path d="M 414 66 a 26 22 0 0 1 52 0" stroke="#F0ABFC" stroke-width="4" fill="none"/>
   <rect x="408" y="62" width="8" height="14" rx="4" fill="#F0ABFC"/>
@@ -47,10 +97,13 @@
   <path d="M 468 76 q 4 12 -8 14" stroke="#F0ABFC" stroke-width="3" fill="none" stroke-linecap="round"/>
   <circle cx="458" cy="91" r="3" fill="#F0ABFC"/>
   <line x1="440" y1="52" x2="440" y2="44" stroke="#F0ABFC" stroke-width="2.5"/>
-  <circle cx="440" cy="41" r="3.5" fill="#7DF9FF"/>
+  <circle class="glow" cx="440" cy="41" r="3.5" fill="#7DF9FF"/>
 
-  <!-- headline -->
+  <!-- headline + shimmer sweep -->
   <text x="440" y="158" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" letter-spacing="8" fill="#FFFFFF">HELLO WORLD</text>
+  <g mask="url(#helloMask)">
+    <rect class="sweep" x="-260" y="112" width="110" height="56" fill="#F0ABFC" opacity="0.55"/>
+  </g>
   <text x="440" y="184" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" letter-spacing="4" fill="#F3E8FF">WELCOME TO MY PROFILE</text>
 
   <!-- side contacts -->
