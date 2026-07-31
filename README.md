@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner.svg" width="100%" alt="I teach machines to talk — 1M+ calls a month, 10 languages, down to the packets." />
+  <img src="assets/banner.svg?v=2" width="100%" alt="I teach machines to talk — 1M+ calls a month, 10 languages, down to the packets." />
 </div>
 
 <p align="center">
