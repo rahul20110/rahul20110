@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 56" role="img" aria-label="Open source">
-  <style>
-    .mono { font-family: 'Geist Mono', 'SFMono-Regular', Consolas, Menlo, monospace; }
-  </style>
-  <rect x="0.5" y="0.5" width="879" height="55" rx="8" fill="#0a0a0a" stroke="#212327"/>
-  <text x="48" y="34" class="mono" font-size="12" letter-spacing="3" fill="#ffffff">OPEN SOURCE</text>
-  <text x="832" y="34" text-anchor="end" class="mono" font-size="11" letter-spacing="1" fill="#7d8187">SHIPPED &#183; MAINTAINED &#183; IN PRODUCTION</text>
-</svg>
